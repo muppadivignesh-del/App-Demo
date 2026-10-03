@@ -1,0 +1,100 @@
+/* Top Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--neutral-100);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-4);
+  height: 3.75rem;
+  z-index: var(--z-navbar);
+  box-shadow: var(--shadow-xs);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  text-decoration: none;
+}
+
+.navbar-logo-icon {
+  font-size: 1.4rem;
+}
+
+.navbar-logo-text {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: var(--font-bold);
+  color: var(--green-700);
+  letter-spacing: -0.02em;
+}
+
+.navbar-title {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.navbar-back-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+  padding: var(--space-2);
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  transition: background var(--transition-fast);
+  line-height: 1;
+}
+
+.navbar-back-btn:hover {
+  background: var(--neutral-100);
+  color: var(--text-primary);
+}
+
+.navbar-icon-btn {
+  font-size: 1.2rem;
+  padding: var(--space-2);
+  border-radius: var(--radius-md);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-fast);
+}
+
+.navbar-icon-btn:hover {
+  background: var(--neutral-100);
+}
+
+.offline-indicator {
+  font-size: var(--text-xs);
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 0.2rem var(--space-2);
+  border-radius: var(--radius-full);
+  font-weight: var(--font-medium);
+}
